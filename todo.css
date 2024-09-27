@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+}
+body{
+    background-color: rgb(111, 110, 110);
+}
+.contanior{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.todo-list{
+    width: 100%;
+    max-width: 30%;
+    background-color: #fff;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+.todo-list h3{
+    font-size: 1.5rem;
+    color: #3459ee;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+.to{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+}
+.to input{
+
+    width: 70%;
+    outline: none;
+    border: none;
+    background:  #e0dede;
+    padding: 0.6rem 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+.to button{
+    border: none;
+    outline: none;
+    color: #e4e4e4;
+    padding: 0.6rem 1.5rem;
+    border-radius: .5rem;
+    background: #3459ee;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.emp{
+    font-size: 1.4rem;
+    color: #f60303;
+    text-align: center;
+    font-weight: 600;
+}
+ul li{
+    list-style: none;
+    margin: 1rem 0.5rem 1rem 2rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    user-select: none;
+    position: relative;
+}
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border: 0.03rem solid black;
+    border-radius: 50%;
+    left:-30px;
+}
+.check{
+    text-decoration: line-through;
+}
+.check::before{
+    background-color: #3459ee;
+    border: 0.02rem solid rgb(72, 72, 72);
+}
+ul li delete{
+  position: absolute;
+  right: 0;
+  top:2px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+ul li delete:hover{
+    background-color: #cbd5fe;
+    border-radius: 0.5rem;
+}
